@@ -1,0 +1,9 @@
+{
+  "name": "backstop-ias",
+  "version": "1.0.0",
+  "main": "backstop.js",
+  "dependencies": {
+    "backstopjs": "^3.1.17",
+    "yargs": "^8.0.2"
+  }
+}
