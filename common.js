@@ -2,31 +2,19 @@
  * BackstopJS common settings.
  */
 
+const viewports = require("./viewports");
+
 module.exports = {
-  engine: "chrome",
+  engine: "puppeteer",
+  onBeforeScript: "puppet/onBefore.js",
+  onReadyScript: "puppet/onReady.js",
   report: ["browser"],
   asyncCompareLimit: 100,
   viewports: [
-    {
-      name: "phone",
-      width: 320,
-      height: 480
-    },
-    {
-      name: "tablet_vertical",
-      width: 768,
-      height: 1024
-    },
-    {
-      name: "laptop",
-      width: 1366,
-      height: 768
-    },
-    {
-      name: "desktop",
-      width: 1920,
-      height: 1080
-    }
+    viewports.phone,
+    viewports.tablet_vertical,
+    viewports.laptop,
+    viewports.desktop
   ],
   paths: {
     bitmaps_reference: "backstop_data/bitmaps_reference",

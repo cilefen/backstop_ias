@@ -1,4 +1,4 @@
-bitmaps_reference/
-bitmaps_test/
-html_report/
+/backstop_data/bitmaps_test
+/backstop_data/bitmaps_reference_dynamic/
+/backstop_data/html_report
 node_modules/
